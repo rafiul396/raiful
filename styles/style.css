@@ -244,3 +244,57 @@ form input[type='text'], input[type='email'], textarea {
     margin-bottom: 18px;
     border: none;
 }
+
+
+/* started responsive design */
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    .primary-btn {
+        padding: 9px 18px;
+    }
+
+    
+    .about {
+        width: 100%;
+        padding: 130px 0;
+    }
+
+    .about-items {
+        flex-direction: column;
+    }
+
+    .skills-card {
+        flex-direction: column;
+    }
+
+    .skills-info {
+        text-align: justify;
+    }
+    
+    .resume-container {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    form input[type='text'], input[type='email'], textarea {
+    display: block;
+    width: calc(100% - 40px);
+    /* width: 50%; */
+    height: 30px;
+}
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .skills-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
